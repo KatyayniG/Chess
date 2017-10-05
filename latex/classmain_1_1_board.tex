@@ -1,0 +1,263 @@
+\hypertarget{classmain_1_1_board}{}\section{main.\+Board Class Reference}
+\label{classmain_1_1_board}\index{main.\+Board@{main.\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_1_1_board_a8121213fe895c9aef3b825f9981ab014}{Board} (int rows, int cols, Boolean custom\+Board)
+\item 
+void \hyperlink{classmain_1_1_board_a433581909511ffb611818397c0d3d59b}{create\+Pawn} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_a1d50738826f5552a1a40b587fb347e19}{create\+Rook} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_a3196684b770b7999e374da1b55118094}{create\+Knight} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_a483033056ca4afb113cac5f4ced359fb}{create\+Bishop} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_a1d2ea2f8563f577b2f0fabcf855738c1}{create\+King} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_aa0957c5b4653c450307263bc89fa1bba}{create\+Queen} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_a10f8b1925189e9c3e818f3555d7ebd39}{create\+Frog} (int x\+Coord, int y\+Coord, String color\+Choice)
+\item 
+void \hyperlink{classmain_1_1_board_acb48e8218e61ff5504a195bb8634e2d4}{add\+Piece\+To\+List} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmain_1_1_square}{Square} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classmain_1_1_board_ad9bdfe96594f8267aca15cafe03904ae}{get\+Grid} ()
+\item 
+static int \hyperlink{classmain_1_1_board_a59eccdf158ef8bcc6524a33363d0e529}{get\+Rows} ()
+\item 
+static int \hyperlink{classmain_1_1_board_a0a0733e45369c0f8e424e772d07fbc81}{get\+Cols} ()
+\item 
+static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \hyperlink{classmain_1_1_board_ab9261be6958e2532a50ae8203ad134d0}{get\+Piece} (int row, int col)
+\item 
+static void \hyperlink{classmain_1_1_board_a215b7bab76f16b1c638bae367a5eed35}{set\+Piece} (int row, int col, \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece)
+\item 
+static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \hyperlink{classmain_1_1_board_a110748d6dfcc0e2bedce2053fb0c94b1}{remove\+Piece} (int row, int col)
+\item 
+static void \hyperlink{classmain_1_1_board_a5c62ecfe1552578c134322f291ce0d58}{move\+Piece} (int src\+Row, int src\+Col, int dest\+Row, int dest\+Col)
+\item 
+static boolean \hyperlink{classmain_1_1_board_aa6fcd07faec07bf9b093b3de3d96732c}{is\+Valid\+Coord} (int row, int col)
+\item 
+static \hyperlink{classmain_1_1_square}{Square} \hyperlink{classmain_1_1_board_a90e5f578ea61f42aa870d413176e1734}{get\+Square} (int row, int col)
+\item 
+static boolean \hyperlink{classmain_1_1_board_a425efbefafed1b93e1ddb92cbc914591}{is\+Square\+Free} (int row, int col)
+\item 
+static boolean \hyperlink{classmain_1_1_board_ade0a0da2dc83ac4bc025a2bdd42259fa}{has\+Enemy} (int row, int col, String color)
+\item 
+static void \hyperlink{classmain_1_1_board_a4faa6115089869b0dc2590ac45bb14b4}{kill\+Piece} (int row, int col)
+\item 
+static void \hyperlink{classmain_1_1_board_ac6cfd9f1f525312395d060f9491d4fc7}{restore\+Piece} (int row, int col, \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece)
+\item 
+static boolean \hyperlink{classmain_1_1_board_a9e7b3d4970ecf07f4d41862a5dd2c23c}{is\+Valid\+Square} (int row, int col, String color)
+\item 
+static Array\+List$<$ \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} $>$ \hyperlink{classmain_1_1_board_a95214b4080e976b2db615c57fb9dbfaa}{get\+Player\+Pieces} (String color)
+\item 
+static Array\+List$<$ \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} $>$ \hyperlink{classmain_1_1_board_a0e831a72f6f1cbf863dc42b9cd4a6de3}{get\+Enemy\+Pieces} (String color)
+\item 
+static boolean \hyperlink{classmain_1_1_board_acc973c8cc2e9c539fed65bfc3eed5e8f}{is\+In\+Check} (String color)
+\item 
+static boolean \hyperlink{classmain_1_1_board_a7d699e1aaf245c0fab5b1dde84b81d04}{is\+In\+Checkmate} (String color)
+\item 
+static boolean \hyperlink{classmain_1_1_board_a415002f647006cb115dbf0e497d526f9}{is\+In\+Stalemate} (String color)
+\item 
+static void \hyperlink{classmain_1_1_board_a47fe4923194507b37829c4c0169e9e62}{clean\+Board} ()
+\item 
+static void \hyperlink{classmain_1_1_board_a8827dbdb62886f10405270f28de92c71}{print\+Board} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain_1_1_board_a8121213fe895c9aef3b825f9981ab014}\label{classmain_1_1_board_a8121213fe895c9aef3b825f9981ab014}} 
+\index{main\+::\+Board@{main\+::\+Board}!Board@{Board}}
+\index{Board@{Board}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily main.\+Board.\+Board (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{cols,  }\item[{Boolean}]{custom\+Board }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for a board with dimensions. Initializes list of team pieces. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1_board_acb48e8218e61ff5504a195bb8634e2d4}\label{classmain_1_1_board_acb48e8218e61ff5504a195bb8634e2d4}} 
+\index{main\+::\+Board@{main\+::\+Board}!add\+Piece\+To\+List@{add\+Piece\+To\+List}}
+\index{add\+Piece\+To\+List@{add\+Piece\+To\+List}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{add\+Piece\+To\+List()}{addPieceToList()}}
+{\footnotesize\ttfamily void main.\+Board.\+add\+Piece\+To\+List (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds each initialized piece to its corresponding list \mbox{\Hypertarget{classmain_1_1_board_a47fe4923194507b37829c4c0169e9e62}\label{classmain_1_1_board_a47fe4923194507b37829c4c0169e9e62}} 
+\index{main\+::\+Board@{main\+::\+Board}!clean\+Board@{clean\+Board}}
+\index{clean\+Board@{clean\+Board}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{clean\+Board()}{cleanBoard()}}
+{\footnotesize\ttfamily static void main.\+Board.\+clean\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Removes all pieces from the \hyperlink{classmain_1_1_board}{Board}. T\+O\+DO\+: Ask user for restart game, and if so, \hyperlink{classmain_1_1_board_a47fe4923194507b37829c4c0169e9e62}{clean\+Board()} \mbox{\Hypertarget{classmain_1_1_board_a483033056ca4afb113cac5f4ced359fb}\label{classmain_1_1_board_a483033056ca4afb113cac5f4ced359fb}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+Bishop@{create\+Bishop}}
+\index{create\+Bishop@{create\+Bishop}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+Bishop()}{createBishop()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+Bishop (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one bishop and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_a10f8b1925189e9c3e818f3555d7ebd39}\label{classmain_1_1_board_a10f8b1925189e9c3e818f3555d7ebd39}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+Frog@{create\+Frog}}
+\index{create\+Frog@{create\+Frog}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+Frog()}{createFrog()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+Frog (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one frog and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_a1d2ea2f8563f577b2f0fabcf855738c1}\label{classmain_1_1_board_a1d2ea2f8563f577b2f0fabcf855738c1}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+King@{create\+King}}
+\index{create\+King@{create\+King}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+King()}{createKing()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+King (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one king and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_a3196684b770b7999e374da1b55118094}\label{classmain_1_1_board_a3196684b770b7999e374da1b55118094}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+Knight@{create\+Knight}}
+\index{create\+Knight@{create\+Knight}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+Knight()}{createKnight()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+Knight (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one knight and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_a433581909511ffb611818397c0d3d59b}\label{classmain_1_1_board_a433581909511ffb611818397c0d3d59b}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+Pawn@{create\+Pawn}}
+\index{create\+Pawn@{create\+Pawn}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+Pawn()}{createPawn()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+Pawn (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one pawn and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_aa0957c5b4653c450307263bc89fa1bba}\label{classmain_1_1_board_aa0957c5b4653c450307263bc89fa1bba}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+Queen@{create\+Queen}}
+\index{create\+Queen@{create\+Queen}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+Queen()}{createQueen()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+Queen (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one queen and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_a1d50738826f5552a1a40b587fb347e19}\label{classmain_1_1_board_a1d50738826f5552a1a40b587fb347e19}} 
+\index{main\+::\+Board@{main\+::\+Board}!create\+Rook@{create\+Rook}}
+\index{create\+Rook@{create\+Rook}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{create\+Rook()}{createRook()}}
+{\footnotesize\ttfamily void main.\+Board.\+create\+Rook (\begin{DoxyParamCaption}\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{String}]{color\+Choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates one rook and sets its coordinates \& color \mbox{\Hypertarget{classmain_1_1_board_a0a0733e45369c0f8e424e772d07fbc81}\label{classmain_1_1_board_a0a0733e45369c0f8e424e772d07fbc81}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Cols@{get\+Cols}}
+\index{get\+Cols@{get\+Cols}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Cols()}{getCols()}}
+{\footnotesize\ttfamily static int main.\+Board.\+get\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns number of columns on board \mbox{\Hypertarget{classmain_1_1_board_a0e831a72f6f1cbf863dc42b9cd4a6de3}\label{classmain_1_1_board_a0e831a72f6f1cbf863dc42b9cd4a6de3}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Enemy\+Pieces@{get\+Enemy\+Pieces}}
+\index{get\+Enemy\+Pieces@{get\+Enemy\+Pieces}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Enemy\+Pieces()}{getEnemyPieces()}}
+{\footnotesize\ttfamily static Array\+List$<$\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}$>$ main.\+Board.\+get\+Enemy\+Pieces (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns list of all pieces corresponding to enemy color \mbox{\Hypertarget{classmain_1_1_board_ad9bdfe96594f8267aca15cafe03904ae}\label{classmain_1_1_board_ad9bdfe96594f8267aca15cafe03904ae}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Grid@{get\+Grid}}
+\index{get\+Grid@{get\+Grid}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Grid()}{getGrid()}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1_square}{Square} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} main.\+Board.\+get\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns 2D array of squares \mbox{\Hypertarget{classmain_1_1_board_ab9261be6958e2532a50ae8203ad134d0}\label{classmain_1_1_board_ab9261be6958e2532a50ae8203ad134d0}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Piece@{get\+Piece}}
+\index{get\+Piece@{get\+Piece}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Piece()}{getPiece()}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} main.\+Board.\+get\+Piece (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Gets piece from a place on the grid \mbox{\Hypertarget{classmain_1_1_board_a95214b4080e976b2db615c57fb9dbfaa}\label{classmain_1_1_board_a95214b4080e976b2db615c57fb9dbfaa}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Player\+Pieces@{get\+Player\+Pieces}}
+\index{get\+Player\+Pieces@{get\+Player\+Pieces}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Player\+Pieces()}{getPlayerPieces()}}
+{\footnotesize\ttfamily static Array\+List$<$\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}$>$ main.\+Board.\+get\+Player\+Pieces (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns list of all pieces corresponding to player color \mbox{\Hypertarget{classmain_1_1_board_a59eccdf158ef8bcc6524a33363d0e529}\label{classmain_1_1_board_a59eccdf158ef8bcc6524a33363d0e529}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Rows@{get\+Rows}}
+\index{get\+Rows@{get\+Rows}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Rows()}{getRows()}}
+{\footnotesize\ttfamily static int main.\+Board.\+get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns number of rows on board \mbox{\Hypertarget{classmain_1_1_board_a90e5f578ea61f42aa870d413176e1734}\label{classmain_1_1_board_a90e5f578ea61f42aa870d413176e1734}} 
+\index{main\+::\+Board@{main\+::\+Board}!get\+Square@{get\+Square}}
+\index{get\+Square@{get\+Square}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Square()}{getSquare()}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1_square}{Square} main.\+Board.\+get\+Square (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a square on the grid \mbox{\Hypertarget{classmain_1_1_board_ade0a0da2dc83ac4bc025a2bdd42259fa}\label{classmain_1_1_board_ade0a0da2dc83ac4bc025a2bdd42259fa}} 
+\index{main\+::\+Board@{main\+::\+Board}!has\+Enemy@{has\+Enemy}}
+\index{has\+Enemy@{has\+Enemy}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{has\+Enemy()}{hasEnemy()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+has\+Enemy (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Checks for a square is occupied by an enemy piece \mbox{\Hypertarget{classmain_1_1_board_acc973c8cc2e9c539fed65bfc3eed5e8f}\label{classmain_1_1_board_acc973c8cc2e9c539fed65bfc3eed5e8f}} 
+\index{main\+::\+Board@{main\+::\+Board}!is\+In\+Check@{is\+In\+Check}}
+\index{is\+In\+Check@{is\+In\+Check}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+In\+Check()}{isInCheck()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+is\+In\+Check (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Checks the board for check. Gets your team\textquotesingle{}s King and checks if any enemy pieces can touch my King \mbox{\Hypertarget{classmain_1_1_board_a7d699e1aaf245c0fab5b1dde84b81d04}\label{classmain_1_1_board_a7d699e1aaf245c0fab5b1dde84b81d04}} 
+\index{main\+::\+Board@{main\+::\+Board}!is\+In\+Checkmate@{is\+In\+Checkmate}}
+\index{is\+In\+Checkmate@{is\+In\+Checkmate}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+In\+Checkmate()}{isInCheckmate()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+is\+In\+Checkmate (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Checks for Checkmate to see if there exists any move that gets the player out of Check \mbox{\Hypertarget{classmain_1_1_board_a415002f647006cb115dbf0e497d526f9}\label{classmain_1_1_board_a415002f647006cb115dbf0e497d526f9}} 
+\index{main\+::\+Board@{main\+::\+Board}!is\+In\+Stalemate@{is\+In\+Stalemate}}
+\index{is\+In\+Stalemate@{is\+In\+Stalemate}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+In\+Stalemate()}{isInStalemate()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+is\+In\+Stalemate (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Method to check if player is in Stalemate. If the player is not in Check but every move would put them in Check \mbox{\Hypertarget{classmain_1_1_board_a425efbefafed1b93e1ddb92cbc914591}\label{classmain_1_1_board_a425efbefafed1b93e1ddb92cbc914591}} 
+\index{main\+::\+Board@{main\+::\+Board}!is\+Square\+Free@{is\+Square\+Free}}
+\index{is\+Square\+Free@{is\+Square\+Free}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+Square\+Free()}{isSquareFree()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+is\+Square\+Free (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Checks for if a square on the grid has a piece \mbox{\Hypertarget{classmain_1_1_board_aa6fcd07faec07bf9b093b3de3d96732c}\label{classmain_1_1_board_aa6fcd07faec07bf9b093b3de3d96732c}} 
+\index{main\+::\+Board@{main\+::\+Board}!is\+Valid\+Coord@{is\+Valid\+Coord}}
+\index{is\+Valid\+Coord@{is\+Valid\+Coord}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+Valid\+Coord()}{isValidCoord()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+is\+Valid\+Coord (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Checks to ensure coordinate is valid on grid \mbox{\Hypertarget{classmain_1_1_board_a9e7b3d4970ecf07f4d41862a5dd2c23c}\label{classmain_1_1_board_a9e7b3d4970ecf07f4d41862a5dd2c23c}} 
+\index{main\+::\+Board@{main\+::\+Board}!is\+Valid\+Square@{is\+Valid\+Square}}
+\index{is\+Valid\+Square@{is\+Valid\+Square}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+Valid\+Square()}{isValidSquare()}}
+{\footnotesize\ttfamily static boolean main.\+Board.\+is\+Valid\+Square (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Method to check if a square is valid for a piece to move to, given color of the player \mbox{\Hypertarget{classmain_1_1_board_a4faa6115089869b0dc2590ac45bb14b4}\label{classmain_1_1_board_a4faa6115089869b0dc2590ac45bb14b4}} 
+\index{main\+::\+Board@{main\+::\+Board}!kill\+Piece@{kill\+Piece}}
+\index{kill\+Piece@{kill\+Piece}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{kill\+Piece()}{killPiece()}}
+{\footnotesize\ttfamily static void main.\+Board.\+kill\+Piece (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Kills the piece by removing it from the board and deletes the piece from its corresponding list \mbox{\Hypertarget{classmain_1_1_board_a5c62ecfe1552578c134322f291ce0d58}\label{classmain_1_1_board_a5c62ecfe1552578c134322f291ce0d58}} 
+\index{main\+::\+Board@{main\+::\+Board}!move\+Piece@{move\+Piece}}
+\index{move\+Piece@{move\+Piece}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{move\+Piece()}{movePiece()}}
+{\footnotesize\ttfamily static void main.\+Board.\+move\+Piece (\begin{DoxyParamCaption}\item[{int}]{src\+Row,  }\item[{int}]{src\+Col,  }\item[{int}]{dest\+Row,  }\item[{int}]{dest\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Moves a piece from a source to destination \mbox{\Hypertarget{classmain_1_1_board_a8827dbdb62886f10405270f28de92c71}\label{classmain_1_1_board_a8827dbdb62886f10405270f28de92c71}} 
+\index{main\+::\+Board@{main\+::\+Board}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{print\+Board()}{printBoard()}}
+{\footnotesize\ttfamily static void main.\+Board.\+print\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\subsubsection*{Print out the board in this text format }
+
+0 $\vert$\+R$\vert$\+N$\vert$\+B$\vert$\+Q$\vert$\+K$\vert$\+B$\vert$\+N$\vert$\+R$\vert$ 1 $\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$ 2 $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ 3 $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ 4 $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ 5 $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ $\vert$ 6 $\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$\+P$\vert$ \subsubsection*{7 $\vert$\+R$\vert$\+N$\vert$\+B$\vert$\+K$\vert$\+Q$\vert$\+B$\vert$\+N$\vert$\+R$\vert$ }
+
+0 1 2 3 4 5 6 7 \mbox{\Hypertarget{classmain_1_1_board_a110748d6dfcc0e2bedce2053fb0c94b1}\label{classmain_1_1_board_a110748d6dfcc0e2bedce2053fb0c94b1}} 
+\index{main\+::\+Board@{main\+::\+Board}!remove\+Piece@{remove\+Piece}}
+\index{remove\+Piece@{remove\+Piece}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{remove\+Piece()}{removePiece()}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} main.\+Board.\+remove\+Piece (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Removes a piece from a place on the grid \mbox{\Hypertarget{classmain_1_1_board_ac6cfd9f1f525312395d060f9491d4fc7}\label{classmain_1_1_board_ac6cfd9f1f525312395d060f9491d4fc7}} 
+\index{main\+::\+Board@{main\+::\+Board}!restore\+Piece@{restore\+Piece}}
+\index{restore\+Piece@{restore\+Piece}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{restore\+Piece()}{restorePiece()}}
+{\footnotesize\ttfamily static void main.\+Board.\+restore\+Piece (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Method to restore piece when conducting \textquotesingle{}pseudo moves\textquotesingle{} for verifying Checkmate moves \mbox{\Hypertarget{classmain_1_1_board_a215b7bab76f16b1c638bae367a5eed35}\label{classmain_1_1_board_a215b7bab76f16b1c638bae367a5eed35}} 
+\index{main\+::\+Board@{main\+::\+Board}!set\+Piece@{set\+Piece}}
+\index{set\+Piece@{set\+Piece}!main\+::\+Board@{main\+::\+Board}}
+\subsubsection{\texorpdfstring{set\+Piece()}{setPiece()}}
+{\footnotesize\ttfamily static void main.\+Board.\+set\+Piece (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Sets a piece onto a place on the grid 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/Board.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classmain_1_1pieces_1_1_piece}{}\section{main.\+pieces.\+Piece Class Reference}
+\label{classmain_1_1pieces_1_1_piece}\index{main.\+pieces.\+Piece@{main.\+pieces.\+Piece}}
+Inheritance diagram for main.\+pieces.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classmain_1_1pieces_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Array\+List$<$ \hyperlink{classmain_1_1_square}{Square} $>$ \hyperlink{classmain_1_1pieces_1_1_piece_a227ebaf4d456aa773b0ba90754572728}{get\+All\+Possible\+Moves} ()
+\item 
+String \hyperlink{classmain_1_1pieces_1_1_piece_a52545d99f7a6c36b99cfcf40fd0a9cef}{get\+Color} ()
+\item 
+List$<$ \hyperlink{classmain_1_1_square}{Square} $>$ \hyperlink{classmain_1_1pieces_1_1_piece_a658f7f763d86a73dda37d4e1ecf6a451}{all\+One\+Direction\+Moves} (int deltaX, int deltaY, String color)
+\item 
+\hyperlink{classmain_1_1_square}{Square} \hyperlink{classmain_1_1pieces_1_1_piece_a562c0141b77a4d7bb0d8b0411cb48303}{get\+Square} ()
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_a8f19216cafccc3889f9143ad13a4c7be}{set\+Square} (\hyperlink{classmain_1_1_square}{Square} square)
+\item 
+String \hyperlink{classmain_1_1pieces_1_1_piece_a291b8f58d884f6dec30e101d0bbc59bd}{get\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_aa8b9955e4a1ce43f003b6969906f06b4}\label{classmain_1_1pieces_1_1_piece_aa8b9955e4a1ce43f003b6969906f06b4}} 
+\hyperlink{classmain_1_1_square}{Square} {\bfseries square}
+\item 
+\mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_adfac16563191967f4158f64fe18d4854}\label{classmain_1_1pieces_1_1_piece_adfac16563191967f4158f64fe18d4854}} 
+String {\bfseries color}
+\item 
+\mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a31bbb042dedf2d89fa95069ae4ef36f5}\label{classmain_1_1pieces_1_1_piece_a31bbb042dedf2d89fa95069ae4ef36f5}} 
+String {\bfseries type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a658f7f763d86a73dda37d4e1ecf6a451}\label{classmain_1_1pieces_1_1_piece_a658f7f763d86a73dda37d4e1ecf6a451}} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!all\+One\+Direction\+Moves@{all\+One\+Direction\+Moves}}
+\index{all\+One\+Direction\+Moves@{all\+One\+Direction\+Moves}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{all\+One\+Direction\+Moves()}{allOneDirectionMoves()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classmain_1_1_square}{Square}$>$ main.\+pieces.\+Piece.\+all\+One\+Direction\+Moves (\begin{DoxyParamCaption}\item[{int}]{deltaX,  }\item[{int}]{deltaY,  }\item[{String}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a list of all moves a piece can take in a single direction Used for \hyperlink{classmain_1_1pieces_1_1_bishop}{Bishop}, \hyperlink{classmain_1_1pieces_1_1_queen}{Queen}, \& \hyperlink{classmain_1_1pieces_1_1_rook}{Rook} \mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a227ebaf4d456aa773b0ba90754572728}\label{classmain_1_1pieces_1_1_piece_a227ebaf4d456aa773b0ba90754572728}} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!get\+All\+Possible\+Moves@{get\+All\+Possible\+Moves}}
+\index{get\+All\+Possible\+Moves@{get\+All\+Possible\+Moves}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+All\+Possible\+Moves()}{getAllPossibleMoves()}}
+{\footnotesize\ttfamily abstract Array\+List$<$\hyperlink{classmain_1_1_square}{Square}$>$ main.\+pieces.\+Piece.\+get\+All\+Possible\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+An abstract method to return list of all possible moves for a piece \mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a52545d99f7a6c36b99cfcf40fd0a9cef}\label{classmain_1_1pieces_1_1_piece_a52545d99f7a6c36b99cfcf40fd0a9cef}} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily String main.\+pieces.\+Piece.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for piece\textquotesingle{}s color \mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a562c0141b77a4d7bb0d8b0411cb48303}\label{classmain_1_1pieces_1_1_piece_a562c0141b77a4d7bb0d8b0411cb48303}} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!get\+Square@{get\+Square}}
+\index{get\+Square@{get\+Square}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Square()}{getSquare()}}
+{\footnotesize\ttfamily \hyperlink{classmain_1_1_square}{Square} main.\+pieces.\+Piece.\+get\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Bidirectional Returns a square that the piece is on \mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a291b8f58d884f6dec30e101d0bbc59bd}\label{classmain_1_1pieces_1_1_piece_a291b8f58d884f6dec30e101d0bbc59bd}} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily String main.\+pieces.\+Piece.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns piece type \mbox{\Hypertarget{classmain_1_1pieces_1_1_piece_a8f19216cafccc3889f9143ad13a4c7be}\label{classmain_1_1pieces_1_1_piece_a8f19216cafccc3889f9143ad13a4c7be}} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!set\+Square@{set\+Square}}
+\index{set\+Square@{set\+Square}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{set\+Square()}{setSquare()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+set\+Square (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1_square}{Square}}]{square }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates the location of the piece 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/pieces/Piece.\+java\end{DoxyCompactItemize}
